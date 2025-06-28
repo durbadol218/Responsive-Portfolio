@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mess Management - Project Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #0056b3;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    header a {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 2.5rem;
+      color: #222;
+    }
+    img.project-detail-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section.description,
+    section.features,
+    section.technologies {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    section.features ul,
+    section.technologies ul {
+      list-style: disc inside;
+      margin-top: 1rem;
+    }
+
+    section.features h2,
+    section.technologies h2 {
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.8rem 2rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      border: 1px solid #353535;
+      background: none;
+      color: #000;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      min-width: 140px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #353535;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .btn-container {
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        min-width: unset;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="./index.html">&larr; Back to Home</a>
+  </header>
+
+  <h1>Mess Management</h1>
+
+  <img
+    src="./assets/hostel1.jpg"
+    alt="Mess Management Project Screenshot"
+    class="project-detail-img"
+  />
+
+  <section class="description">
+    <h2>Project Overview</h2>
+    <p>
+      Mess Management is a full-stack web application designed to streamline
+      managing mess bills, user registrations, monthly reports, and admin operations.
+      It features user-friendly interfaces for both members and administrators,
+      making bill tracking and payments hassle-free.
+    </p>
+  </section>
+
+  <section class="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>User registration and token-based authentication</li>
+      <li>Separate roles: Member and Admin</li>
+      <li>Monthly bill tracking and reports generation</li>
+      <li>Admin dashboard for managing users and bills</li>
+      <li>Responsive design with smooth navigation</li>
+    </ul>
+  </section>
+
+  <section class="technologies">
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>Python, Django & Django REST Framework</li>
+      <li>JavaScript (Vanilla), HTML5, CSS3</li>
+      <li>Responsive design and accessibility best practices</li>
+      <li>Google Fonts (Poppins)</li>
+    </ul>
+  </section>
+
+  <div class="btn-container">
+    <a href="https://github.com/durbadol218/Mess-Management-System" class="btn" target="_blank" rel="noopener noreferrer">
+      GitHub Repo
+    </a>
+    <a href="https://mess-management-frontend-five.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer">
+      Live Demo
+    </a>
+  </div>
+</body>
+</html>
